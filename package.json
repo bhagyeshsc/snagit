@@ -1,0 +1,39 @@
+{
+  "name": "snagit",
+  "version": "0.1.0",
+  "description": "Snag video or audio off a link, from your terminal.",
+  "license": "MIT",
+  "author": "Bhagyesh Chaudhari",
+  "type": "module",
+  "bin": {
+    "snagit": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "cli",
+    "tui",
+    "download",
+    "downloader",
+    "video",
+    "audio",
+    "mp3",
+    "terminal",
+    "zero-dependencies"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}

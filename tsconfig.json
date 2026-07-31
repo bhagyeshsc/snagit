@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "lib": ["es2023"],
+    "module": "node16",
+    "moduleResolution": "node16",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "declaration": false,
+    "sourceMap": false,
+    "outDir": "dist",
+    "rootDir": "source",
+    // Pin LF. tsc otherwise emits CRLF on Windows, which turns the shebang into
+    // "#!/usr/bin/env node\r" and breaks the CLI for every mac and Linux user.
+    "newLine": "lf",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["source"]
+}
